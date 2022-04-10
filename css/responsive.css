@@ -1,0 +1,296 @@
+@media screen and (max-width: 820px) {
+  a {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: #ff008c;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+  h1 {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: #ff008c;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  h2 {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: #ff008c;
+    letter-spacing: 1px;
+  }
+  /* NOVEDADES */
+
+  .novedades_libros img {
+    width: 20em;
+  }
+  .novedades_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 4em;
+  }
+  /* FIN NOVEDADES */
+
+  /* NOSOTROS */
+  .somos_nosotros h1 {
+    padding-top: 2em;
+    text-align: center;
+  }
+  .texto_nosotros {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .somos_nosotros p {
+    margin: 0em 4em 0em 4em;
+    display: flex;
+    text-align: justify;
+    font-family: "Poppins";
+    color: #bcaef4;
+    font-size: 1rem;
+  }
+  .somos_nosotros img {
+    margin: 1em;
+    width: 50%;
+    height: 50%;
+    border-radius: 0.5em;
+  }
+
+  /* HEADER */
+  header {
+    position: relative;
+    top: 0;
+    background: #ffffff;
+    z-index: 9;
+    border-radius: 1em;
+  }
+  header .container-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  header .logo img {
+    width: 3.5em;
+    margin: 1em;
+    display: block;
+  }
+  header .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+  }
+  .formulario_search {
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: flex-end;
+  }
+  .formulario_search img {
+    display: flex;
+    width: 1em;
+    height: 1em;
+  }
+  /* FIN HEADER */
+}
+
+@media screen and (max-width: 767px) {
+  a {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: #ff008c;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+  h1 {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: #ff008c;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  h2 {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: #ff008c;
+    letter-spacing: 1px;
+  }
+
+  /* HEADER */
+  header {
+    position: relative;
+    top: 0;
+    background: #ffffff;
+    z-index: 9;
+    border-radius: 1em;
+  }
+  header .container-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  header .logo img {
+    width: 3.5em;
+    margin: 1em;
+    display: block;
+  }
+  header .menu ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .formulario_search {
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: flex-end;
+  }
+  .formulario_search img {
+    display: flex;
+    width: 1em;
+    height: 1em;
+  }
+  /* FIN HEADER */
+
+  /* NOVEDADES */
+
+  .novedades_libros img {
+    width: 15em;
+  }
+  .novedades_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 4em;
+  }
+  /* FIN NOVEDADES */
+
+  /* NOSOTROS */
+  .somos_nosotros h1 {
+    padding-top: 2em;
+    text-align: center;
+  }
+  .texto_nosotros {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .somos_nosotros p {
+    margin: 0;
+    display: flex;
+    text-align: center;
+    font-family: "Poppins";
+    color: #bcaef4;
+    font-size: 1rem;
+  }
+  .somos_nosotros img {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 0.5em;
+  }
+
+  /* FIN NOSOTROS */
+  /* CONTACTO */
+
+  .formulario_contacto h1 {
+    padding-top: 2em;
+  }
+  .formulario {
+    display: block;
+    text-align: center;
+  }
+  .formulario_contacto form {
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 1rem;
+    color: #bcaef4;
+    letter-spacing: 1px;
+  }
+  .formulario_contacto input {
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 1rem;
+    color: #bcaef4;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 15em;
+    border-radius: 0.5em;
+    border: none;
+    opacity: 0.7;
+  }
+  .formulario_contacto #term {
+    width: 1em;
+  }
+  .formulario_contacto .button {
+    background-color: #ffffff;
+    width: 7em;
+    height: 2em;
+    margin: 0em 0em 1em 0em;
+  }
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bcaef4;
+    border: none;
+    opacity: 1; /* Firefox */
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #bcaef4;
+  }
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #bcaef4;
+  }
+  .formulario textarea {
+    border: none;
+    width: 10em;
+    height: 8em;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    color: #bcaef4;
+    letter-spacing: 1px;
+    text-align: left;
+    border-radius: 0.7em;
+    opacity: 0.7;
+  }
+
+  /* FIN CONTACTO */
+
+  /* FOOTER */
+
+  .pie {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 6em;
+  }
+  .pie ul {
+    gap: 0em;
+  }
+  .politicas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .politicas a {
+    font-size: 1rem;
+  }
+  /* FIN FOOTER */
+}

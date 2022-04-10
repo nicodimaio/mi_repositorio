@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Una Librería Propia</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="shortcut icon" href="img/logo_post.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+     <header>
+    <div class="container-grid">
+      <div class="logo">
+        <a href="./index.html"
+        ><img src="./img/logo_post.png" alt="Logo Una Libreria Propia"
+      /></a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#novedades">Novedades</a></li>
+          <li><a href="./pages/libros.html">Libros</a></li>
+          <li><a href="./pages/blog.html">Una Reseña Propia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a
+            target="_blank"
+            href="https://www.instagram.com/unalibreriapropia"
+          ><img
+              src="./img/Instagram.svg"
+              alt="Seguinos en Instagram"
+              width="30px"
+          /></a>
+          </li> 
+          <li><form
+          class="formulario_search"
+          action="search.php"
+          method="get"
+          enctype="text/plain">
+          <!-- esto procesa la info -->
+          <label for="buscar"></label>
+          <input type="text" id="buscar" placeholder="Buscar" />
+          <img src="./img/search.svg" alt="Logo Buscar" />
+        </form></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <banners class="banner_carrousel">
+        <img src="./img/banner.png" alt="Una Libreria Propia" />
+    </banners>
+      <novedades id="novedades" class="novedades_libros">
+        <h1>Conocé las últimas novedades</h1>
+        <div class="novedades_container">
+        <a href="/pages/blog.html#libro1"><img src="./img/libro1.png" alt="Una Libreria Propia"></a>
+        <a href="/pages/blog.html#libro2"><img src="./img/libro2.jpeg" alt="Una Libreria Propia"></a>
+        <a href="/pages/blog.html#libro3"><img src="./img/libro3.jpeg" alt="Una Libreria Propia"></a>
+        <a href="/pages/blog.html#libro4"><img src="./img/libro4.jpeg" alt="Una Libreria Propia"></a>
+        </div>
+      </novedades>
+      <nosotros id="nosotros" class="somos_nosotros">
+        <h1>Nosotros</h1>
+        <br /><br />
+        <p class="texto_nosotros">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Reprehenderit tenetur quisquam dolore eligendi, earum, iure,
+          distinctio minima doloremque ullam quos voluptas numquam. Quidem
+          veritatis iure vero porro nisi dolore ea totam exercitationem aut
+          atque hic corporis natus quisquam quas ducimus cumque fugiat, minima
+          asperiores optio numquam consequuntur, quia ut nostrum voluptas!
+          Corrupti ducimus adipisci nobis iusto facere inventore at vero nisi
+          modi quos? Optio perspiciatis neque quis illo asperiores obcaecati,
+          eaque ipsam nihil aperiam fugit, quam numquam quae voluptate doloribu
+          <img src="./img/personal.png" alt="Foto Personal" />
+        </p>
+      </nosotros>
+      <contacto id="contacto" class="formulario_contacto">
+        <h1>Contacto</h1>
+        <br />
+        <form
+          class="formulario"
+          action="enviar.php"
+          method="get"
+          enctype="text/plain"
+        >
+          <!-- esto procesa la info -->
+          <div>
+            <label for="nombre">¿Cómo te llamás?</label><br />
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Ingresá tu nombre"
+              required
+            />
+          </div>
+          <div>
+            <label for="mail">¿A qué mail te respondemos?</label><br />
+            <input
+              type="email"
+              id="mail"
+              name="mail"
+              placeholder="Ingresá tu email"
+              required
+            />
+          </div>
+          <div>
+            <label for="multi">Contanos aquí tu consulta</label><br />
+            <textarea name="multi" id="multi" cols="50" rows="5"></textarea>
+          </div>
+          <div>
+            ¿Te gustaría recibir novedades </br>y descuentos por email?
+            <br />
+            <input type="checkbox" name="term" id="term" value="1" required />
+            Sí, quiero recibir novedades y descuentos
+          </div>
+          <br />
+          <input class="button" type="submit" value="Enviar" />
+          <input class="button" type="reset" value="Borrar" />
+          <br /><br /><br /><br />
+        </form>
+      </contacto>
+      <footer class="pie">
+        <ul class="politicas">
+          <li><a href="./pages/terminos.html">Términos y Condiciones</a></li>
+          <li><a href="./pages/privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </footer>
+  </body>
+</html>

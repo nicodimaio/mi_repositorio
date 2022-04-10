@@ -102,6 +102,7 @@ header .menu ul {
 .novedades_libros img {
   width: 22em;
 }
+
 .novedades_container {
   display: flex;
   justify-content: space-evenly;

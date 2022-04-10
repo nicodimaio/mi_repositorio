@@ -101,6 +101,10 @@ header .menu ul {
 
 .novedades_libros img {
   width: 22em;
+  transform: scale(1.2);
+}
+.novedades_libros img:hover {
+  opacity: 0.3;
 }
 
 .novedades_container {

@@ -5,10 +5,10 @@
 }
 body {
   overflow-x: hidden;
+  background: #fedee3;
 }
 html {
   font-size: 100%;
-  background: #fedee3;
 }
 font-family {
   font-family: "Poppins", sans-serif;
@@ -46,43 +46,53 @@ header {
   z-index: 9;
   border-radius: 1em;
 }
-header .container-grid {
+.navbar {
+  height: 6em;
+}
+
+.container-fluid {
+  height: 6em;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 15em;
+  background: #ffffff;
 }
-header .logo img {
+.navbar-brand img {
   width: 3.5em;
   margin: 1em;
   display: block;
 }
-header .menu ul {
+.botones {
   display: flex;
-  gap: 6em;
+  padding: 0em 3em 0em 3em;
 }
-.formulario_search {
+
+a:hover {
+  color: #bcaef4;
+}
+
+.search {
+  color: #ff008c;
+  border-radius: 0.2em;
+  border: none;
+  height: 2em;
+  padding-left: 0.5em;
+}
+.search::placeholder {
+  border: none;
+  color: #bcaef4;
+  padding-left: 0.05em;
+}
+.search-success {
+  background: #ffffff;
+  border: none;
   display: flex;
   align-items: center;
-  border: none;
-  justify-content: flex-end;
-}
-.formulario_search img {
-  display: flex;
-  width: 2em;
-  height: 2em;
-}
-#text {
-  border-color: none;
-}
-#buscar {
-  font-family: "Poppins";
-  color: #ff008c;
+  padding: 0em 1em 0em 1em;
   font-size: 1rem;
-  border: none;
-  height: 2em;
-  width: 100%;
-  border-radius: 0.5em;
 }
+
 /* FIN HEADER */
 
 /* CARROUSEL */
@@ -90,7 +100,7 @@ header .menu ul {
 .banner_carrousel {
   display: flex;
 }
-.banner_carrousel img {
+.carousel-item img {
   width: 100%;
   border-radius: 1em;
 }
@@ -101,12 +111,7 @@ header .menu ul {
 
 .novedades_libros img {
   width: 22em;
-  transform: scale(1.2);
 }
-.novedades_libros img:hover {
-  opacity: 0.3;
-}
-
 .novedades_container {
   display: flex;
   justify-content: space-evenly;
@@ -119,16 +124,19 @@ header .menu ul {
   color: #ff008c;
   padding-top: 2em;
   padding-bottom: 1em;
+  background: #fedee3;
 }
 /* FIN NOVEDADES */
 
 /* NOSOTROS */
 .somos_nosotros h1 {
   padding-top: 2em;
+  background: #fedee3;
 }
 .texto_nosotros {
   display: flex;
   align-items: center;
+  background: #fedee3;
 }
 .somos_nosotros p {
   display: flex;

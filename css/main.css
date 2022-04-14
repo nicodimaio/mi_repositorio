@@ -49,6 +49,10 @@ header {
 .navbar {
   height: 6em;
 }
+.nav-item {
+  display: flex;
+  align-items: center;
+}
 
 .container-fluid {
   height: 6em;
@@ -66,6 +70,11 @@ header {
 .botones {
   display: flex;
   padding: 0em 3em 0em 3em;
+  text-align: center;
+}
+.botones img {
+  height: 2em;
+  gap: 2em;
 }
 
 a:hover {

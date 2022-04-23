@@ -39,6 +39,10 @@ ul {
 }
 
 /* HEADER */
+.navbar-light .navbar-toggler {
+  color: #ff008c;
+  border-color: #ff008c;
+}
 header {
   position: sticky;
   top: 0;
@@ -46,66 +50,60 @@ header {
   z-index: 9;
   border-radius: 1em;
 }
-.navbar {
-  height: 6em;
+.navbar-brand img {
+  width: 4em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.navbar-collapse {
+  justify-content: space-between;
+}
+.nav-item img {
+  width: 2em;
+  align-items: center;
+}
+.navbar-nav {
+  align-items: center;
+}
+.me-auto {
+  margin-right: 0 !important;
 }
 .nav-item {
-  display: flex;
-  align-items: center;
+  margin: 0em 4em 0em 4em;
 }
-
-.container-fluid {
-  height: 6em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 15em;
-  background: #ffffff;
+.d-flex {
+  justify-content: end;
 }
-.navbar-brand img {
-  width: 3.5em;
-  margin: 1em;
-  display: block;
-}
-.botones {
-  display: flex;
-  padding: 0em 3em 0em 3em;
-  text-align: center;
-}
-.botones img {
-  height: 2em;
-  gap: 2em;
-}
-
-a:hover {
-  color: #bcaef4;
-}
-
-.search {
+.navbar-light .navbar-nav .nav-link.active {
+  text-decoration: none;
+  font-family: "Poppins";
   color: #ff008c;
-  border-radius: 0.2em;
-  border: none;
-  height: 2em;
-  padding-left: 0.5em;
-}
-.search::placeholder {
-  border: none;
-  color: #bcaef4;
-  padding-left: 0.05em;
-}
-.search-success {
-  background: #ffffff;
-  border: none;
-  display: flex;
-  align-items: center;
-  padding: 0em 1em 0em 1em;
+  letter-spacing: 1px;
   font-size: 1rem;
+}
+.form-control {
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #ff008c;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border-color: #fedee3;
+}
+.form-control: {
+  border-color: #bcaef4;
+}
+.btn-outline-success {
+  border-color: #fedee3;
+}
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #fedee3;
+  border: none;
 }
 
 /* FIN HEADER */
 
 /* CARROUSEL */
-
 .banner_carrousel {
   display: flex;
 }
@@ -113,13 +111,14 @@ a:hover {
   width: 100%;
   border-radius: 1em;
 }
-
 /* FIN CARROUSEL */
 
 /* NOVEDADES */
-
 .novedades_libros img {
   width: 22em;
+}
+.novedades_libros img:hover {
+  opacity: 0.8;
 }
 .novedades_container {
   display: flex;
@@ -131,7 +130,7 @@ a:hover {
 .novedades_libros h1 {
   font-family: "Poppins";
   color: #ff008c;
-  padding-top: 2em;
+  padding-top: 3em;
   padding-bottom: 1em;
   background: #fedee3;
 }
@@ -139,7 +138,7 @@ a:hover {
 
 /* NOSOTROS */
 .somos_nosotros h1 {
-  padding-top: 2em;
+  padding-top: 3em;
   background: #fedee3;
 }
 .texto_nosotros {
@@ -168,7 +167,7 @@ a:hover {
 /* CONTACTO */
 
 .formulario_contacto h1 {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 .formulario {
   display: block;

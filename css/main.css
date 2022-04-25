@@ -31,6 +31,7 @@ h1 {
   font-family: "Poppins";
   color: #ff008c;
   letter-spacing: 1px;
+  font-size: 1rem;
   text-align: center;
   font-size: 3rem;
 }
@@ -40,6 +41,8 @@ h2 {
   font-family: "Poppins";
   color: #ff008c;
   letter-spacing: 1px;
+  font-size: 1rem;
+  font-size: 2rem;
 }
 
 ul {
@@ -78,7 +81,6 @@ header .navbar-brand img {
 
 header .navbar-light .navbar-toggler {
   color: #ff008c;
-  border-color: #ff008c;
 }
 
 header .navbar-collapse {
@@ -165,18 +167,15 @@ header .btn-outline-success:hover {
 }
 
 .novedades_libros h1 {
-  font-family: "Poppins";
-  color: #ff008c;
   padding-top: 3em;
   padding-bottom: 1em;
-  background: #fedee3;
 }
 
 /* FIN NOVEDADES */
 /* NOSOTROS */
 .somos_nosotros h1 {
   padding-top: 3em;
-  background: #fedee3;
+  padding-bottom: 1em;
 }
 
 .texto_nosotros {
@@ -212,6 +211,7 @@ header .btn-outline-success:hover {
 /* CONTACTO */
 .formulario_contacto h1 {
   padding-top: 3em;
+  padding-bottom: 1em;
 }
 
 .formulario {
@@ -310,7 +310,7 @@ header .btn-outline-success:hover {
 /* FIN CONTACTO */
 /* FOOTER */
 .pie {
-  background: #ffffff;
+  background-color: #ff008c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,19 +319,21 @@ header .btn-outline-success:hover {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 6em;
+  height: 4em;
 }
 
 .pie ul {
   gap: 6em;
 }
 
+.pie a {
+  color: #ffffff;
+}
+
 /* FIN FOOTER */
 /* PRIVACIDAD Y TERMINOS */
+/* USO EXTEND */
 .politicas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 2em;
@@ -340,6 +342,20 @@ header .btn-outline-success:hover {
 
 .politicas a {
   font-size: 1rem;
+}
+
+.privacidad, .politicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.privacidad p, .politicas p {
+  margin: 2em 5em 2em 5em;
+  text-align: justify;
+  font-family: "Poppins";
+  color: #bcaef4;
+  font-size: 1.5rem;
 }
 
 /* FIN PRIVACIDAD Y TERMINOS */
@@ -494,45 +510,16 @@ header .btn-outline-success:hover {
 }
 
 /* FIN BLOG */
-.privacidad {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.privacidad p {
-  margin: 2em 5em 2em 5em;
-  text-align: justify;
-  font-family: "Poppins";
-  color: #bcaef4;
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 992px) {
-  a {
-    text-decoration: none;
-    font-family: "Poppins";
-    color: #ff008c;
-    letter-spacing: 1px;
-    font-size: 1rem;
-  }
+@media screen and (max-width: 991px) {
   h1 {
-    text-decoration: none;
-    font-family: "Poppins";
-    color: #ff008c;
-    letter-spacing: 1px;
-    text-align: center;
     font-size: 2rem;
   }
-  h2 {
-    text-decoration: none;
-    font-family: "Poppins";
-    color: #ff008c;
-    letter-spacing: 1px;
-  }
   /* NOVEDADES */
+  .novedades_libros h1 {
+    padding-top: 4em;
+  }
   .novedades_libros img {
-    width: 20em;
+    width: 15em;
   }
   .novedades_container {
     display: -webkit-box;
@@ -544,26 +531,116 @@ header .btn-outline-success:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 0.1em;
+    margin-bottom: 4em;
+  }
+  /* FIN NOVEDADES */
+  .formulario_contacto h1 {
+    padding-top: 4em;
+  }
+  .formulario {
+    padding-bottom: 5em;
+  }
+  .formulario_contacto form {
+    font-size: 1rem;
+  }
+  .formulario_contacto input {
+    font-size: 1rem;
+    width: 30em;
+  }
+  .formulario_contacto .button {
+    margin: 0em 0em 1em 0em;
+  }
+  .formulario textarea {
+    width: 20em;
+    height: 15em;
+  }
+  /* NOSOTROS */
+  .somos_nosotros h1 {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  .somos_nosotros p {
+    margin: 0em 0em 0em 2em;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .somos_nosotros img {
+    width: 40%;
+    height: 40%;
+  }
+  .blog_img {
+    margin: 1em;
+  }
+  .blog_img img {
+    width: 15%;
+    height: 15%;
+  }
+  .text_blog {
+    font-size: 1rem;
+    margin-left: 2em;
+  }
+  .text_blog p {
+    font-size: 1rem;
+  }
+  .text_blog a {
+    font-size: 1rem;
+  }
+  .text_overlay {
+    font-size: 1rem;
+  }
+  .grid-gallery {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  /* NOVEDADES */
+  .novedades_libros h1 {
+    padding-top: 4em;
+  }
+  .novedades_libros img {
+    width: 20em;
+  }
+  .novedades_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 0.5em;
-    margin-bottom: 4em;
   }
   /* FIN NOVEDADES */
+  /* CONTACTO */
+  .formulario_contacto h1 {
+    padding-top: 4em;
+  }
+  .formulario {
+    padding-bottom: 5em;
+  }
+  .formulario_contacto form {
+    font-size: 1rem;
+  }
+  .formulario_contacto input {
+    font-size: 1rem;
+    width: 30em;
+  }
+  .formulario_contacto .button {
+    margin: 0em 0em 1em 0em;
+  }
+  .formulario textarea {
+    width: 20em;
+    height: 15em;
+  }
   /* NOSOTROS */
   .somos_nosotros h1 {
     padding-top: 2em;
     text-align: center;
   }
   .texto_nosotros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -571,64 +648,52 @@ header .btn-outline-success:hover {
   }
   .somos_nosotros p {
     margin: 0em 4em 0em 4em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     text-align: justify;
-    font-family: "Poppins";
-    color: #bcaef4;
     font-size: 1rem;
   }
   .somos_nosotros img {
     margin: 1em;
     width: 50%;
     height: 50%;
-    border-radius: 0.5em;
+  }
+  .blog_img {
+    margin: 1em;
+  }
+  .blog_img img {
+    width: 15%;
+    height: 15%;
+  }
+  .text_blog {
+    font-size: 1rem;
+  }
+  .text_blog p {
+    font-size: 1rem;
+  }
+  .text_blog a {
+    font-size: 1rem;
+  }
+  .grid-gallery {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .privacidad p, .politicas p {
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 425px) {
-  a {
-    text-decoration: none;
-    font-family: "Poppins";
-    color: #ff008c;
-    letter-spacing: 1px;
-    font-size: 1rem;
-  }
   h1 {
-    text-decoration: none;
-    font-family: "Poppins";
-    color: #ff008c;
-    letter-spacing: 1px;
-    text-align: center;
     font-size: 2rem;
-  }
-  h2 {
-    text-decoration: none;
-    font-family: "Poppins";
-    color: #ff008c;
-    letter-spacing: 1px;
   }
   /* NOVEDADES */
   .novedades_libros img {
     width: 15em;
   }
   .novedades_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 0.5em;
-    margin-bottom: 4em;
   }
   /* FIN NOVEDADES */
   /* NOSOTROS */
@@ -637,156 +702,71 @@ header .btn-outline-success:hover {
     text-align: center;
   }
   .texto_nosotros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
   .somos_nosotros p {
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin: 2em;
     text-align: center;
-    font-family: "Poppins";
-    color: #bcaef4;
     font-size: 1rem;
   }
   .somos_nosotros img {
     margin: auto;
     width: 80%;
     height: 80%;
-    border-radius: 0.5em;
   }
   /* FIN NOSOTROS */
   /* CONTACTO */
   .formulario_contacto h1 {
     padding-top: 2em;
   }
-  .formulario {
-    display: block;
-    text-align: center;
-  }
   .formulario_contacto form {
-    text-decoration: none;
-    font-family: "Poppins";
     font-size: 1rem;
-    color: #bcaef4;
-    letter-spacing: 1px;
   }
   .formulario_contacto input {
-    text-decoration: none;
-    font-family: "Poppins";
     font-size: 1rem;
-    color: #bcaef4;
-    letter-spacing: 1px;
-    text-align: center;
-    width: 15em;
-    border-radius: 0.5em;
-    border: none;
-    opacity: 0.7;
-  }
-  .formulario_contacto #term {
-    width: 1em;
+    width: 21em;
   }
   .formulario_contacto .button {
-    background-color: #ffffff;
-    width: 7em;
-    height: 2em;
     margin: 0em 0em 1em 0em;
   }
-  ::-webkit-input-placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #bcaef4;
-    border: none;
-    opacity: 1;
-    /* Firefox */
-  }
-  :-ms-input-placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #bcaef4;
-    border: none;
-    opacity: 1;
-    /* Firefox */
-  }
-  ::-ms-input-placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #bcaef4;
-    border: none;
-    opacity: 1;
-    /* Firefox */
-  }
-  ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #bcaef4;
-    border: none;
-    opacity: 1;
-    /* Firefox */
-  }
-  :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #bcaef4;
-  }
-  ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #bcaef4;
-  }
   .formulario textarea {
-    border: none;
-    width: 10em;
-    height: 8em;
-    text-decoration: none;
-    font-family: "Poppins";
-    font-size: 1.5rem;
-    color: #bcaef4;
-    letter-spacing: 1px;
-    text-align: left;
-    border-radius: 0.7em;
-    opacity: 0.7;
+    width: 14em;
+    height: 6em;
   }
   /* FIN CONTACTO */
   /* FOOTER */
-  .pie {
-    background: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 6em;
-  }
   .pie ul {
     gap: 0em;
   }
-  .politicas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-  .politicas a {
-    font-size: 1rem;
-  }
   /* FIN FOOTER */
+  .blog_img {
+    margin: 1em;
+  }
+  .blog_img img {
+    width: 15%;
+    height: 15%;
+  }
+  .text_blog {
+    font-size: 0.5rem;
+  }
+  .text_blog p {
+    font-size: 0.5rem;
+  }
+  .text_blog a {
+    font-size: 0.5rem;
+  }
+  .grid-gallery {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .text_overlay {
+    font-size: 0.8rem;
+  }
+  .privacidad p, .politicas p {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

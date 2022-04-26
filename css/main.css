@@ -744,19 +744,28 @@ header .btn-outline-success:hover {
   /* FIN FOOTER */
   .blog_img {
     margin: 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .blog_img img {
-    width: 15%;
-    height: 15%;
+    width: 50%;
+    height: 50%;
   }
   .text_blog {
-    font-size: 0.5rem;
+    font-size: 1rem;
+    text-align: justify;
   }
   .text_blog p {
-    font-size: 0.5rem;
+    font-size: 1rem;
+    text-align: justify;
   }
   .text_blog a {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .grid-gallery {
     -ms-grid-columns: (1fr)[1];

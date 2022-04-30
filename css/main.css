@@ -144,6 +144,23 @@ header .btn-outline-success:hover {
 
 /* FIN CARROUSEL */
 /* NOVEDADES */
+.swiper {
+  width: 100%;
+  height: 50%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
 .novedades_libros img {
   width: 22em;
 }
@@ -601,6 +618,10 @@ header .btn-outline-success:hover {
     font-size: 2rem;
   }
   /* NOVEDADES */
+  .swiper {
+    width: 100%;
+    height: 40%;
+  }
   .novedades_libros h1 {
     padding-top: 4em;
   }
@@ -686,8 +707,12 @@ header .btn-outline-success:hover {
     font-size: 2rem;
   }
   /* NOVEDADES */
+  .swiper {
+    width: 100%;
+    height: 50%;
+  }
   .novedades_libros img {
-    width: 15em;
+    width: 18.7em;
   }
   .novedades_container {
     -webkit-box-orient: vertical;

@@ -18,6 +18,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link rel="shortcut icon" href="img/logo_post.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -151,24 +156,48 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <novedades id="novedades" class="novedades_libros">
+
+    <section id="novedades" class="novedades_libros">
       <h1>Conocé las últimas novedades</h1>
-      <div class="novedades_container">
-        <a href="/pages/blog.html#libro1"
-          ><img src="./img/libro1.png" alt="Una Libreria Propia"
-        /></a>
-        <a href="/pages/blog.html#libro2"
-          ><img src="./img/libro2.jpeg" alt="Una Libreria Propia"
-        /></a>
-        <a href="/pages/blog.html#libro3"
-          ><img src="./img/libro3.jpeg" alt="Una Libreria Propia"
-        /></a>
-        <a href="/pages/blog.html#libro4"
-          ><img src="./img/libro4.jpeg" alt="Una Libreria Propia"
-        /></a>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="/pages/blog.html#libro1"
+              ><img src="./img/libro1.png" alt="Una Libreria Propia"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/pages/blog.html#libro2"
+              ><img src="./img/libro2.jpeg" alt="Una Libreria Propia"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/pages/blog.html#libro3"
+              ><img src="./img/libro3.jpeg" alt="Una Libreria Propia"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/pages/blog.html#libro4"
+              ><img src="./img/libro4.jpeg" alt="Una Libreria Propia"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/pages/blog.html#libro4"
+              ><img src="./img/libro4.jpeg" alt="Una Libreria Propia"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/pages/blog.html#libro4"
+              ><img src="./img/libro4.jpeg" alt="Una Libreria Propia"
+            /></a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </novedades>
-    <nosotros id="nosotros" class="somos_nosotros">
+    </section>
+    <section id="nosotros" class="somos_nosotros">
       <h1>Nosotros</h1>
       <p class="texto_nosotros">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit
@@ -182,8 +211,8 @@
         numquam quae voluptate doloribu
         <img src="./img/personal.png" alt="Foto Personal" />
       </p>
-    </nosotros>
-    <contacto id="contacto" class="formulario_contacto">
+    </section>
+    <section id="contacto" class="formulario_contacto">
       <h1>Contacto</h1>
       <form
         class="formulario"
@@ -226,7 +255,7 @@
         <input class="button" type="submit" value="Enviar" />
         <input class="button" type="reset" value="Borrar" />
       </form>
-    </contacto>
+    </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 190">
       <path
         fill="#ff008c"
@@ -240,6 +269,30 @@
         <li><a href="./pages/privacidad.html">Política de Privacidad</a></li>
       </ul>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 60,
+          stretch: -1000,
+          depth: 100,
+          modifier: 0.3,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

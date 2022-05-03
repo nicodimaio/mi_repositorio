@@ -162,7 +162,7 @@ header {
 .somos_nosotros p {
   display: flex;
   text-align: right;
-  margin-left: 5em;
+  margin-left: 15em;
   margin-bottom: 0em;
   font-family: "Poppins";
   color: map-get($map: $colores, $key: Terciario);
@@ -171,7 +171,7 @@ header {
 .somos_nosotros img {
   width: 30%;
   height: 30%;
-  margin: 0em 3em 0em 1em;
+  margin: 0em 15em 0em 1em;
   border-radius: 0.5em;
 }
 /* FIN NOSOTROS */
@@ -254,7 +254,6 @@ header {
 .pie a {
   color: #ffffff;
 }
-
 /* FIN FOOTER */
 /* PRIVACIDAD Y TERMINOS */
 /* USO EXTEND */
@@ -359,21 +358,23 @@ header {
 }
 .blog_img {
   display: flex;
+  align-items: center;
   margin: 5em;
   width: 90%;
 }
 .blog_img img {
   width: 25%;
+  height: 25%;
 }
 .text_blog {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: right;
-  text-align: left;
+  text-align: justify;
   font-family: "Poppins";
   color: map-get($map: $colores, $key: Terciario);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-left: 2em;
 }
 .text_blog p {
@@ -477,6 +478,9 @@ header {
 @media screen and (max-width: $tablet) {
   h1 {
     font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
   }
   /* NOVEDADES */
   .swiper {
@@ -633,6 +637,7 @@ header {
   .text_blog {
     font-size: 1rem;
     text-align: justify;
+    margin-left: 0;
   }
   .text_blog p {
     font-size: 1rem;

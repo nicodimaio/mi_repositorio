@@ -210,7 +210,7 @@ header .btn-outline-success:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: right;
-  margin-left: 5em;
+  margin-left: 15em;
   margin-bottom: 0em;
   font-family: "Poppins";
   color: #bcaef4;
@@ -220,7 +220,7 @@ header .btn-outline-success:hover {
 .somos_nosotros img {
   width: 30%;
   height: 30%;
-  margin: 0em 3em 0em 1em;
+  margin: 0em 15em 0em 1em;
   border-radius: 0.5em;
 }
 
@@ -477,12 +477,16 @@ header .btn-outline-success:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5em;
   width: 90%;
 }
 
 .blog_img img {
   width: 25%;
+  height: 25%;
 }
 
 .text_blog {
@@ -499,10 +503,10 @@ header .btn-outline-success:hover {
   -webkit-box-align: right;
       -ms-flex-align: right;
           align-items: right;
-  text-align: left;
+  text-align: justify;
   font-family: "Poppins";
   color: #bcaef4;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-left: 2em;
 }
 
@@ -616,6 +620,9 @@ header .btn-outline-success:hover {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
   }
   /* NOVEDADES */
   .swiper {
@@ -784,6 +791,7 @@ header .btn-outline-success:hover {
   .text_blog {
     font-size: 1rem;
     text-align: justify;
+    margin-left: 0;
   }
   .text_blog p {
     font-size: 1rem;
